@@ -61,6 +61,20 @@ main{
    
 }
 
+.monobox{
+    position: absolute;
+    top: 80vh;
+    right: 5vw;
+}
+
+.monobox h3{
+    font-family: Space Mono;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    color: black;
+}
+
 .textbox{
     width: 45vw;
     margin: auto auto 100px auto;
