@@ -21,7 +21,22 @@ nav a{
 }
 
 #home{
-    color: deeppink;
+    background-color: deeppink;
+    color: white;
+}
+
+.backgroundimage{
+    display: none;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 20;
+}
+.backgroundimage img{
+    width: 50vw;
+}
+
+#home:hover + .backgroundimage{
+    display: flex;
 }
 
 .active {
