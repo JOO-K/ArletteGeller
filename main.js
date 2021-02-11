@@ -1,12 +1,12 @@
 $("document").ready(function(){
 
     // Text Toggle for Long List Items in Main-Menu
-    function toggleText(param, init, second) {
-        $(param).mouseover(function(){
-            $(param).text(second);
+    function toggleText(elem, init, second) {
+        $(elem).mouseover(function(){
+            $(elem).text(second);
         })
-        $(param).mouseout(function(){
-            $(param).text(init);
+        $(elem).mouseout(function(){
+            $(elem).text(init);
         })
     }
 
