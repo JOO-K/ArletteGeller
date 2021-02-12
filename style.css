@@ -34,7 +34,7 @@
   top: 0;
   background-color: deeppink;
   color: white;
-  padding: 17px;
+  padding: 18px;
   border: none;
   border-radius: 0px;
   cursor: pointer;
@@ -61,7 +61,7 @@
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   right: 0;  
   top: 0;
   background-color: #f1f1f1;
