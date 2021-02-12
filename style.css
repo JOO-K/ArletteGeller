@@ -1,6 +1,5 @@
 *{
     margin: 0px;
-    overflow-x: hidden;
 }
 
 .desktopnav{
@@ -26,23 +25,74 @@
     
 }
 
-.mobilenav{
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 10;
-    display: none;
-    background-color: white;
+/* Mobile DropDown Menu v */
+
+/* Dropdown Button */
+.dropbtn {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: deeppink;
+  color: white;
+  padding: 17px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  z-index: 100;
+  display: none;
 }
+
+@media all and (max-width: 1000px) {
+    .dropbtn{
+        display: block;
+    }
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: lawngreen;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {    
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;  
+  top: 0;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* Mobile DropDown Menu ^ */
 
 nav a{
     font-family: Karla;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 25px;
     text-decoration: none;
     color: #242424;
     padding: 2px 5px;
-    border-radius: 20px;
 }
 
 #home{
@@ -115,8 +165,8 @@ main{
 
 @media all and (max-width: 1000px) {
     .monobox{
-        top: 5vh;
-        left: 5vw;
+        top: 6vh;
+        left: 6vw;
     }
 }
 
@@ -135,7 +185,7 @@ main{
 
 @media all and (max-width: 1000px) {
     .textbox{
-        width: 90vw;
+        width: 85vw;
         padding-top: 40px;
     }
 }
