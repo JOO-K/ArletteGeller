@@ -16,68 +16,61 @@
 	<body>
        
         <nav>
-            <div class="desktopnav">
-            <a href="" id="home">Arlette Geller</a><br>
-            <a href="">About Me</a><br>
-            <a href="">Resume</a><br><br>
-            
-            <a href="" class="active">Speculum Apparatus</a><br>
-            <a href="">Cystoscope Apenditure</a><br>
-            <a href="">Mitral Valve Sewing Ring</a><br>
-            <a href="">Heart Failure Prediction Model</a><br>
-            <a href="">At-Home B.C. Screening</a><br>
-            <a href="">Assist-Tech High Spinal Injuries</a><br>
-            <a href="">Pen Plotter Machine</a><br>
-            <a href="">Non-Invas. V.N. Stimulation</a><br>
-            <a href="">Game Board Design</a><br><br>
-            
-            <a href="">LinkedIn</a><br>
-            <a href="">Email</a><br>
-            </div>    
-            
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn"></button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="" id="home">Arlette Geller</a>
+            <ul class="section-list">
+                <li>
+                    <a href="index.html" id="home">Arlette Geller</a>
+                </li>
+                <li>
                     <a href="">About Me</a>
+                </li>
+                <li>
                     <a href="">Resume</a>
-            
+                </li>
+            </ul>
+            <br>
+            <ul class="project-list">
+                <li>
                     <a href="" class="active">Speculum Apparatus</a>
+                </li>
+                <li>
                     <a href="">Cystoscope Apenditure</a>
+                </li>
+                <li>
                     <a href="">Mitral Valve Sewing Ring</a>
-                    <a href="">Heart Failure Prediction Model</a>
-                    <a href="">At-Home B.C. Screening</a>
-                    <a href="">Assist-Tech High Spinal Injuries</a>
-                    <a href="">Pen Plotter Machine</a>
-                    <a href="">Non-Invas. V.N. Stimulation</a>
-                    <a href="">Game Board Design</a>
-            
-                    <a href="">LinkedIn</a>
-                    <a href="">Email</a>
-                </div>
-            </div>
-            
-            <script>
-                /* When the user clicks on the button,
-                toggle between hiding and showing the dropdown content */
-                function myFunction() {
-                    document.getElementById("myDropdown").classList.toggle("show");
-}
+                </li>
 
-                // Close the dropdown menu if the user clicks outside of it
-                window.onclick = function(event) {
-                if (!event.target.matches('.dropbtn')) {
-                    var dropdowns = document.getElementsByClassName("dropdown-content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                        }
-                    }
-                }
-                }
-            </script>
+                <li>
+                    <a href="">Heart Failure Prediction Model</a>
+                </li>
+
+                <li id="bc-screening">
+                    <a href="">At-Home B.C. Screening</a>
+                </li>
+                <li id="assist-tech">
+                    <a href="">Assist-Tech High Spinal Injuries</a>
+                </li>
+                <li>
+                    <a href="">Pen Plotter Machine</a>
+                </li>
+                <li id="non-invasive">
+                    <a href="">Non-Invas. V.N. Stimulation</a>
+                </li>
+                <li>
+                    <a href="">Game Board Design</a>
+                </li>
+                <li>
+
+                </li>
+            </ul>
+            <ul class="socials-list">
+                <li>
+                    <a href="">LinkedIn</a><br>
+                </li>
+                <li>
+                    <a href="">Email</a>
+                </li>
+            </ul>
+            
         </nav>
         
         <div class="backgroundimage">
