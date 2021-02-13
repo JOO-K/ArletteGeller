@@ -15,4 +15,3 @@ $("document").ready(function(){
     toggleText("#non-invasive > a", "Non-Invas. V.N. Stimulation", "Non-Invasive Vagus Nerve Stimulation Device");
     
 })
-

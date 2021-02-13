@@ -137,18 +137,21 @@ main{
     top: 0px;
     left: 0px;
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     overflow: hidden;
+    background-color: aqua;
     z-index: -1;
 }
 
 .topimage img{
-    
+    width: auto;
+    height: 100%;
+    margin-left: auto;
 }
 
 .spacer{
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
 }
 
 @media all and (max-width: 1000px) {
