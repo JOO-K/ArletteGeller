@@ -189,25 +189,6 @@ nav a:hover {
   color: white;
 }
 
-main{
-}
-
-.topimage{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-color: aqua;
-    z-index: -1;
-}
-
-.topimage img{
-    width: auto;
-    height: 100%;
-    margin-left: auto;
-}
 
 .spacer{
     width: 100vw;
@@ -216,7 +197,7 @@ main{
 
 @media all and (max-width: 1000px) {
     .spacer{
-        height: 43vh;
+        height: 100vh;
     }
 }
 
@@ -226,7 +207,7 @@ main{
 
 .monobox{
     position: absolute;
-    top: 82.5vh;
+    top: 100vh;
     right: 5vw;
 }
 

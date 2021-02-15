@@ -14,7 +14,7 @@ $("document").ready(function(){
     toggleText("#assist-tech > a", "Assist-Tech High Spinal Injuries", "Assistive Technology for High Spinal Cord Injuries");
     toggleText("#non-invasive > a", "Non-Invas. V.N. Stimulation", "Non-Invasive Vagus Nerve Stimulation Device");
 
-    let slideNum = 5;
+    // Slider Main Page
     
     let i = 0;
     let curr = i;
@@ -47,9 +47,7 @@ $("document").ready(function(){
     setInterval(slide, 3500);
 
     function slide() {
-        
-       
-            
+         
         let curr = i;
         let next = i + 1;
         let aftr = i + 2;
