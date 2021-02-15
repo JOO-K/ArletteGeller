@@ -33,10 +33,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background: cyan;
-}
-
 .backdrop {
     position: absolute;
     top: 0;
