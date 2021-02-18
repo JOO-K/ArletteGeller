@@ -16,6 +16,7 @@
 	<body>
        
         <nav>
+           <div class="desktopnav">
             <ul class="section-list">
                 <li>
                     <a href="index.html" id="home">Arlette Geller</a>
@@ -62,6 +63,7 @@
 
                 </li>
             </ul>
+            
             <ul class="socials-list">
                 <li>
                     <a href="">LinkedIn</a><br>
@@ -70,19 +72,55 @@
                     <a href="">Email</a>
                 </li>
             </ul>
+            </div>
             
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="index.html" id="home">Arlette Geller</a>
+                    <a href="">About Me</a>
+                    <a href="">Resume</a>
+            
+                    <a href="speculum-apparatus.html" class="active">Speculum Apparatus</a>
+                    <a href="">Cystoscope Apenditure</a>
+                    <a href="">Mitral Valve Sewing Ring</a>
+                    <a href="">Heart Failure Prediction Model</a>
+                    <a href="">At-Home B.C. Screening</a>
+                    <a href="">Assist-Tech High Spinal Injuries</a>
+                    <a href="">Pen Plotter Machine</a>
+                    <a href="">Non-Invas. V.N. Stimulation</a>
+                    <a href="">Game Board Design</a>
+            
+                    <a href="">LinkedIn</a>
+                    <a href="">Email</a>
+                </div>
+            </div>
+            
+            <script>
+                /* When the user clicks on the button,
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+                // Close the dropdown menu if the user clicks outside of it
+                window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+                }
+            </script>
         </nav>
         
-        <div class="backgroundimage">
-            <img src="images/sun.gif">
-        </div>
-        
         <main>
-            <div class="topimage">
-                <img src="images/topimage3.jpg"> 
-            </div>
             <div class="project">
-                <div class="spacer"></div>
                 <div class="textbox">
                     <h1>Speculum Apparatus</h1>
                 </div>
