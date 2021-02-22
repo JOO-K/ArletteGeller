@@ -23,6 +23,7 @@ $("document").ready(function(){
     $('*[data-slide-id = ' + curr + ' ]').css({"left": "0%"});
     $('*[data-slide-id =  ' + next + ' ]').css({"left": "50%"});
     $('*[data-slide-id =  ' + aftr + ' ]').css({"left": "100%"});
+    $('*[data-slide-id =  3 ]').css({"left": "100%"});
 
     var winAspect = $(window).width() / $(window).height();
     var imgAspect = 1.78703703704;
@@ -54,8 +55,9 @@ $("document").ready(function(){
 
         console.log(curr);
         
-        if (i < 2) {
+        if (i < 3) {
             $('.rotary').css("left", "0");
+            $('.rotary img').css("left", "100%");
             $('*[data-slide-id = ' + curr + ' ]').css({"left": "0%", "z-index": "0"});
             $('*[data-slide-id =  ' + next + ' ]').css({"left": "50%", "z-index": "1"});
             $('*[data-slide-id =  ' + aftr + ' ]').css({"left": "100%", "z-index": "2"});
@@ -72,7 +74,7 @@ $("document").ready(function(){
                 $('*[data-slide-id =  ' + aftr + ' ]').css({"left": "50%"});
             });
         } else {
-            let currd = 2;
+            let currd = 3;
             let nextd = 0;
             let aftrd = 1;
             $('.rotary').css("left", "0");
@@ -91,6 +93,14 @@ $("document").ready(function(){
                 console.log("---------");
             });
         }
-    }
+    }  
+
+    $(".test").ready(function(){
+        $(".test").hide().delay(300).fadeIn(500);
+    });
+
     
 })
+
+
+
