@@ -17,7 +17,7 @@
 
 @media all and (max-width: 1000px) {
     .desktopnav{
-        display:none;
+        display: none;
     }
 }
 
@@ -203,14 +203,16 @@ nav a:hover {
 
 .monobox{
     position: absolute;
-    top: 100vh;
+    top: 15vh;
     right: 5vw;
 }
 
 @media all and (max-width: 1000px) {
     .monobox{
-        top: 6vh;
-        left: 6vw;
+        position: relative;
+        text-align: right;
+        top: 0;
+        right: 7vw;
     }
 }
 
@@ -255,7 +257,7 @@ nav a:hover {
     width: 80vw;
     right: 0;
     font-family: Karla;
-    font-weight: 200;
+    font-size: 14px;
 }
 
 @media all and (max-width: 1000px) {
@@ -275,10 +277,6 @@ nav a:hover {
     .imagebox{
         width: 95vw !important;
         left: 1vw !important;
-    }
-
-    .imagebox img {
-        
     }
 }
 
