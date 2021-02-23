@@ -8,7 +8,7 @@
     left: 30px;
     z-index: 10;
     display: block;
-    
+    width: 300px;
 }
 
 .desktopnav ul {
@@ -254,7 +254,7 @@ nav a:hover {
 
 .gallery{
     position: absolute;
-    width: 80vw;
+    width: calc((100vw - 340px));
     right: 0;
     font-family: Karla;
     font-size: 14px;
@@ -282,4 +282,48 @@ nav a:hover {
 
 .imagebox img{
     width: 100%;
+}
+
+.profile-img-container {
+    width: 40%;
+    margin: 52px 0 0 0;
+    position: absolute;
+}
+
+.profile-img-container img {
+    width: 100%;
+}
+
+.profile-textbox {
+    position: absolute;
+    left: 42%;
+    margin: 52px 0 0 0;
+    width: 54%;
+}
+
+.profile-textbox h2 {
+    font-family: Karla;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+@media all and (max-width: 1000px) {
+    .profile-img-container {
+        width: 100%;
+        height: 100vw;
+    }
+
+    .profile-img-container img {
+        position: relative;
+        width: auto;
+        margin: 0 10% 0 10%;
+        height: 100%;
+        left: 0;
+    }
+
+    .profile-textbox {
+        left: 10%;
+        width: 84%;
+        top: calc(100vw + 30px);
+    }
 }
