@@ -99,6 +99,29 @@ $("document").ready(function(){
         $(".test").hide().delay(300).fadeIn(500);
     });
 
+    // Change Project Spacer Height : Project-Descriptor Div Height
+    
+    if ($(window).width() < 1000){
+        var pspaceTop = ($(".pleft").height() + $(".pright").height() + 100).toString();
+        console.log(pspaceTop + "tall  ");
+        $(".project-spacer").css("height", pspaceTop);
+    } else {
+        var pspaceTop = ($(".pleft").height() + $(".pright").height()).toString();
+        console.log(pspaceTop + "tall  ");
+        $(".project-spacer").css("height", pspaceTop);
+    }
+
+    $(window).resize(function(){
+        if ($(window).width() < 1000){
+            var pspaceTop = ($(".pleft").height() + $(".pright").height() + 100).toString();
+            console.log(pspaceTop + "tall  ");
+            $(".project-spacer").css("height", pspaceTop);
+        } else {
+            var pspaceTop = ($(".pleft").height() + $(".pright").height()).toString();
+            console.log(pspaceTop + "tall  ");
+            $(".project-spacer").css("height", pspaceTop);
+        }
+    });
     
 })
 

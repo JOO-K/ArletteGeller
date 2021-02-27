@@ -1,13 +1,8 @@
+/* General ---------------------------------------------------------------------------- */
+
 *{
     margin: 0px;
-}
-
-#canvas {
-    position: relative;
-    width: 45vw;
-    height: 600px;
-    margin: 10vh auto 10vh auto;
-    border: 1px solid black;
+    box-sizing: border-box;
 }
 
 .desktopnav{
@@ -37,9 +32,128 @@
     display: block;
 }
 
-* {
-    box-sizing: border-box;
+/* Mobile DropDown Menu v */
+/* Dropdown Button */
+.dropbtn {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: deeppink;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+  }
+  
+  @media all and (max-width: 1000px) {
+      .dropbtn{
+          display: block;
+      }
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: lawngreen;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {    
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    right: 0;  
+    top: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+  
+  /* Mobile DropDown Menu ^ */
+  
+  nav a{
+      font-family: Karla;
+      font-size: 18px;
+      line-height: 28px;
+      text-decoration: none;
+      color: #242424;
+      padding: 2px 5px;
+  }
+  
+  .active {
+    background-color: deeppink;
+    color: white;
+    border-radius: 0px;
+  }
+  
+  nav a:hover {
+    background-color: coral;
+    color: white;
+  }
+
+.gallery{
+    position: absolute;
+    width: calc((100vw - 340px));
+    right: 0;
+    padding: 0 82px 0 80px;
 }
+
+@media all and (max-width: 1000px) {
+    .gallery{
+        width: 100vw;
+        padding: 0;
+    }
+}
+
+.imagebox{
+    position: relative;
+    width: 45vw;
+    margin: 10vh auto 10vh auto;
+    overflow: hidden;
+}
+
+@media all and (max-width: 1000px) {
+    .imagebox{
+        width: 100%;
+    }
+
+    .imagebox h1{
+        margin: 0 0 0 22px;
+    }
+}
+
+.imagebox img{
+    width: 100%;
+}
+
+.imagebox h1 {
+    font-family: Karla;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+/* Home Page ---------------------------------------------------------------------------- */
 
 .backdrop {
     position: absolute;
@@ -84,6 +198,7 @@
     margin-left: -50%;
     align-self: flex-start;
 }
+
 .content{
     position: absolute;
     z-index: 4;
@@ -97,121 +212,48 @@
     height: 100vh;
 }
 
-/* Mobile DropDown Menu v */
-
-/* Dropdown Button */
-.dropbtn {
-  position: fixed;
-  right: 0;
-  top: 0;
-  background-color: deeppink;
-  color: white;
-  padding: 18px;
-  border: none;
-  border-radius: 0px;
-  cursor: pointer;
-  z-index: 100;
-  display: none;
-}
-
-@media all and (max-width: 1000px) {
-    .dropbtn{
-        display: block;
-    }
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: lawngreen;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {    
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: fixed;
-  right: 0;  
-  top: 0;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 5px 10px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
-/* Mobile DropDown Menu ^ */
-
-nav a{
-    font-family: Karla;
-    font-size: 18px;
-    line-height: 28px;
-    text-decoration: none;
-    color: #242424;
-    padding: 2px 5px;
-}
-
-#home > a{
-    background-color: deeppink;
-    color: white;
-}
-
-.backgroundimage{
-    display: none;
-    justify-content: center;
-    flex-direction: row;
-    z-index: 20;
-}
-.backgroundimage img{
-    width: 50vw;
-}
-
-#home:hover + .backgroundimage{
-    display: flex;
-}
-
-.active {
-  background-color: deeppink;
-  color: white;
-  border-radius: 0px;
-}
-
-nav a:hover {
-  background-color: coral;
-  color: white;
-}
-
-
-.spacer{
-    width: 100vw;
-    height: 100vh;
-}
-
 @media all and (max-width: 1000px) {
     .spacer{
         height: 100vh;
     }
 }
 
-.monobox{
+
+/* Project Page ---------------------------------------------------------------------------- */
+
+.project-gallery {
+    margin-top: 50px;
+}
+
+#canvas {
+    position: relative;
+    width: 45vw;
+    height: 600px;
+    margin: 10vh auto 10vh auto;
+    border: 1px solid black;
+}
+
+.project-descriptor {
+    width: 80%;
     position: absolute;
-    width: 45%;
+    top: 0;
+    margin-left: 50px;
+}
+
+@media all and (max-width: 1000px) {
+    .project-descriptor{
+        width: 100%;
+    }
+}
+
+.textbox .title {
+    
+}
+
+.monobox{
+    /* border: 4px dashed pink; */
+    position: absolute;
+    
     top: 80px;
     
 }
@@ -219,9 +261,10 @@ nav a:hover {
 @media all and (max-width: 1000px) {
     .monobox{
         position: relative;
-        text-align: right;
-        top: 0;
+        text-align: left;
+        top: 50px;
         right: 7vw;
+        width: 80% !important;
     }
 }
 
@@ -234,16 +277,33 @@ nav a:hover {
 }
 
 .pleft {
-    left: 5%;
+    width: 50%;
+    left: 0%;
 }
 
 .pright {
+    width: 40%;
     right: 0;
+}
+
+.project-spacer {
+    width: 100%;
+}
+
+.project-slides {
+    top: 20vw;
 }
 
 .project-gallery .textbox {
     width: 50%;
     margin: 0;
+}
+
+.textbox h1{
+    font-family: Karla;
+    font-weight: 300;
+    font-size: 30px;
+    color: white;
 }
 
 .project-gallery .textbox .title {
@@ -257,62 +317,9 @@ nav a:hover {
     }
 }
 
-.textbox h1{
-    font-family: Karla;
-    font-weight: 300;
-    font-size: 30px;
-    color: white;
-}
 
-.textbox h2{
-    font-family: Karla;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 22px;
-    color: black;
-}
 
-.gallery{
-    position: absolute;
-    width: calc((100vw - 340px));
-    right: 0;
-    padding: 0 82px 0 80px;
-}
-
-.project-gallery {
-    margin-top: 50px;
-}
-
-@media all and (max-width: 1000px) {
-    .gallery{
-        width: 100vw;
-    }
-}
-
-.imagebox{
-    position: relative;
-    width: 45vw;
-    margin: 10vh auto 10vh auto;
-    overflow: hidden;
-}
-
-@media all and (max-width: 1000px) {
-    .imagebox{
-        width: 95vw !important;
-        left: 1vw !important;
-    }
-}
-
-.imagebox img{
-    width: 100%;
-}
-
-.imagebox h1 {
-    font-family: Karla;
-    font-size: 25px;
-    font-weight: 300;
-    
-}
+/* About Page ------------------------------------------------------------------------------- */
 
 .profile-img-container {
     width: 40%;
@@ -336,12 +343,6 @@ nav a:hover {
     font-family: Karla;
     font-size: 25px;
     font-weight: lighter;
-
-    /* font-family: Space Mono;
-    font-size: 18px;
-    font-weight: 100;
-    line-height: 24px;
-    color: #8b8a8a; */
 }
 
 @media all and (max-width: 1000px) {
@@ -365,18 +366,3 @@ nav a:hover {
     }
 }
 
-.project-descriptor {
-    top: 0;
-}
-
-.project-slides {
-    top: 20vw;
-}
-
-.project-spacer {
-    height: 50vh;
-}
-
-.textbox .title {
-    top: -10vw;
-}
