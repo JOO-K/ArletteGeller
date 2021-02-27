@@ -13,7 +13,7 @@
 .desktopnav{
     position: fixed;
     top: 70px;
-    left: 30px;
+    left: 0px;
     z-index: 10;
     display: block;
     width: 300px;
@@ -160,8 +160,8 @@
 
 nav a{
     font-family: Karla;
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 28px;
     text-decoration: none;
     color: #242424;
     padding: 2px 5px;
@@ -211,8 +211,9 @@ nav a:hover {
 
 .monobox{
     position: absolute;
-    top: 15vh;
-    right: 5vw;
+    width: 45%;
+    top: 80px;
+    
 }
 
 @media all and (max-width: 1000px) {
@@ -226,15 +227,27 @@ nav a:hover {
 
 .monobox h3{
     font-family: Space Mono;
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 21px;
-    color: #242424;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 24px;
+    color: #8b8a8a;
 }
 
-.textbox{
-    width: 45vw;
-    margin: auto auto 100px auto;
+.pleft {
+    left: 5%;
+}
+
+.pright {
+    right: 0;
+}
+
+.project-gallery .textbox {
+    width: 50%;
+    margin: 0;
+}
+
+.project-gallery .textbox .title {
+    margin: 0 auto 0 auto;
 }
 
 @media all and (max-width: 1000px) {
@@ -246,17 +259,16 @@ nav a:hover {
 
 .textbox h1{
     font-family: Karla;
-    font-size: 40px;
+    font-weight: 300;
+    font-size: 30px;
     color: white;
-    margin: auto;
-    text-align: center;
 }
 
 .textbox h2{
     font-family: Karla;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
-    line-height: 21px;
+    line-height: 22px;
     color: black;
 }
 
@@ -264,8 +276,11 @@ nav a:hover {
     position: absolute;
     width: calc((100vw - 340px));
     right: 0;
-    font-family: Karla;
-    font-size: 14px;
+    padding: 0 82px 0 80px;
+}
+
+.project-gallery {
+    margin-top: 50px;
 }
 
 @media all and (max-width: 1000px) {
@@ -292,6 +307,13 @@ nav a:hover {
     width: 100%;
 }
 
+.imagebox h1 {
+    font-family: Karla;
+    font-size: 25px;
+    font-weight: 300;
+    
+}
+
 .profile-img-container {
     width: 40%;
     margin: 52px 0 0 0;
@@ -304,15 +326,22 @@ nav a:hover {
 
 .profile-textbox {
     position: absolute;
-    left: 42%;
+    left: 48%;
     margin: 52px 0 0 0;
-    width: 54%;
+    width: 48%;
+    color: #000000;
 }
 
 .profile-textbox h2 {
     font-family: Karla;
     font-size: 25px;
     font-weight: lighter;
+
+    /* font-family: Space Mono;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 24px;
+    color: #8b8a8a; */
 }
 
 @media all and (max-width: 1000px) {
@@ -334,4 +363,20 @@ nav a:hover {
         width: 84%;
         top: calc(100vw + 30px);
     }
+}
+
+.project-descriptor {
+    top: 0;
+}
+
+.project-slides {
+    top: 20vw;
+}
+
+.project-spacer {
+    height: 50vh;
+}
+
+.textbox .title {
+    top: -10vw;
 }
