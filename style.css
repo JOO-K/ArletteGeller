@@ -95,7 +95,7 @@
   nav a{
       font-family: Karla;
       font-size: 18px;
-      line-height: 28px;
+      line-height: 30px;
       text-decoration: none;
       color: #242424;
       padding: 2px 5px;
@@ -272,7 +272,7 @@
     font-family: Space Mono;
     font-size: 18px;
     font-weight: 100;
-    line-height: 24px;
+    line-height: 26px;
     color: #8b8a8a;
 }
 
