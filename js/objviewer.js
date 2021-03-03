@@ -8,7 +8,7 @@ let scene;
 
 function init() {
   container = document.getElementById( 'canvas' );
-  document.body.appendChild( container );
+  // document.body.appendChild( container );
     
   //Create scene
   scene = new THREE.Scene();

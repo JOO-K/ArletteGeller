@@ -131,6 +131,7 @@
     width: 45vw;
     margin: 10vh auto 10vh auto;
     overflow: hidden;
+    border: 5px dashed salmon;
 }
 
 @media all and (max-width: 1000px) {
@@ -144,6 +145,10 @@
 }
 
 .imagebox img{
+    width: 100%;
+}
+
+.imagebox canvas {
     width: 100%;
 }
 
@@ -225,14 +230,6 @@
     margin-top: 50px;
 }
 
-#canvas {
-    position: relative;
-    width: 45vw;
-    height: 600px;
-    margin: 10vh auto 10vh auto;
-    border: 1px solid black;
-}
-
 .project-descriptor {
     width: 80%;
     position: absolute;
@@ -244,10 +241,6 @@
     .project-descriptor{
         width: 100%;
     }
-}
-
-.textbox .title {
-    
 }
 
 .monobox{
@@ -292,6 +285,15 @@
 
 .project-slides {
     top: 20vw;
+    border: 3px dashed mediumseagreen;
+}
+
+#canvas {
+    position: inline-block;
+    width: 45vw;
+    height: 600px;
+    margin: 10vh auto 10vh auto;
+    border: 1px solid black;
 }
 
 .project-gallery .textbox {
