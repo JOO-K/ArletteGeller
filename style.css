@@ -131,7 +131,6 @@
     width: 45vw;
     margin: 10vh auto 10vh auto;
     overflow: hidden;
-    border: 5px dashed salmon;
 }
 
 @media all and (max-width: 1000px) {
@@ -285,7 +284,6 @@
 
 .project-slides {
     top: 20vw;
-    border: 3px dashed mediumseagreen;
 }
 
 #canvas {
