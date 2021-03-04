@@ -12,7 +12,7 @@ function init() {
     
   //Create scene
   scene = new THREE.Scene();
-  scene.background = new THREE.Color('#ff03c0');
+  scene.background = new THREE.Color('#ebebeb');
 
   //Camera setup    
   const fov = 35;
@@ -21,7 +21,8 @@ function init() {
   const far = 1000;
 
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(0, 0, 30);
+  camera.position.set(0, 30, 30);
+  camera.lookAt(0, 0, 0);    
     
     
   //GridVis
