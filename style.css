@@ -291,7 +291,12 @@
     width: 45vw;
     height: 600px;
     margin: 10vh auto 10vh auto;
-    border: 1px solid black;
+}
+
+@media all and (max-width: 1000px) {
+    #canvas {
+    width: 100%;
+    }
 }
 
 .project-gallery .textbox {
