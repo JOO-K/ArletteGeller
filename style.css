@@ -245,7 +245,6 @@
 .monobox{
     /* border: 4px dashed pink; */
     position: absolute;
-    
     top: 80px;
     
 }
@@ -337,6 +336,17 @@
     }
 }
 
+.descript{
+    font-family: Karla;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.descript h1{
+    font-family: Karla;
+    font-weight: 300;
+    font-size: 30px;
+}
 
 
 /* About Page ------------------------------------------------------------------------------- */

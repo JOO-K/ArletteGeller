@@ -11,7 +11,7 @@ $("document").ready(function(){
     }
 
     toggleText("#bc-screening > a", "At-Home B.C. Screening", "At-Home Breast Cancer Screening Device");
-    toggleText("#assist-tech > a", "Assist-Tech High Spinal Injuries", "Assistive Technology for High Spinal Cord Injuries");
+    toggleText("#assist-tech > a", "A-T High Spinal Injuries", "Assistive Technology for High Spinal Cord Injuries");
     toggleText("#non-invasive > a", "Non-Invas. V.N. Stimulation", "Non-Invasive Vagus Nerve Stimulation Device");
 
     // Slider Main Page
