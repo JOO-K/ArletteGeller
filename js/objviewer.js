@@ -27,9 +27,9 @@ function init() {
     
   //GridVis
     
-    const size = 100;
-    const divisions = 100;
-    const colorGrid = '#28d155';
+    const size = 25;
+    const divisions = 10;
+    const colorGrid = '#ff0065';
 
     const gridHelper = new THREE.GridHelper( size, divisions, colorGrid );
     scene.add( gridHelper );
