@@ -21,13 +21,13 @@ function init() {
   const far = 1000;
 
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(0, 30, 30);
+  camera.position.set(25, 5, 25);
   camera.lookAt(0, 0, 0);    
     
     
   //GridVis
     
-    const size = 25;
+    const size = 10;
     const divisions = 10;
     const colorGrid = '#ff0065';
 
@@ -37,12 +37,14 @@ function init() {
  
   
   //Light setup
-  const ambient = new THREE.AmbientLight(0x404040, 2);
-  scene.add(ambient);
 
-  const light = new THREE.DirectionalLight(0xffffff, 1);
-  light.position.set(50, 50, 100);
-  scene.add(light);
+  const light = new THREE.DirectionalLight(0xffffff, 5);
+  light.position.set(0, 0, 100);
+  scene.add(light);  
+    
+  const light2 = new THREE.DirectionalLight(0xffffff, 5);
+  light2.position.set(0, 0, -100);
+  scene.add(light2);    
     
   //Renderer
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -54,9 +56,9 @@ function init() {
   //Load Models
   let loader = new THREE.GLTFLoader();
     
-  loader.load("obj/ring1.gltf", function(gltf) {
+  loader.load("obj/speculumfin.gltf", function(gltf) {
     scene.add(gltf.scene);
-    ring1 = gltf.scene;
+    speculum = gltf.scene;
     animate();
   });
     
