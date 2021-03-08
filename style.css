@@ -337,15 +337,24 @@
 }
 
 .descript{
-    font-family: Karla;
     font-weight: 300;
     font-size: 30px;
+    margin-left: 50px;
+    
 }
 
 .descript h1{
     font-family: Karla;
     font-weight: 300;
     font-size: 30px;
+    margin: 300px 0 50px 0;
+}
+
+.descript h2 {
+    font-family: "space mono";
+    font-weight: 300;
+    font-size: 18px;
+    color: grey;
 }
 
 video {
