@@ -353,6 +353,13 @@
 .descript h2 {
     font-family: "space mono";
     font-weight: 300;
+    font-size: 22px;
+    color: grey;
+}
+
+.descript h3 {
+    font-family: "space mono";
+    font-weight: 300;
     font-size: 18px;
     color: grey;
 }
