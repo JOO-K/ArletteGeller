@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
 .desktopnav{
     position: fixed;
     top: 70px;
@@ -153,7 +156,7 @@
 
 .imagebox h1 {
     font-family: Karla;
-    font-size: 25px;
+    font-size: 10vw;
     font-weight: 300;
 }
 
@@ -303,14 +306,29 @@
 }
 
 .imagebox h1{
-    font-family: "space mono";
-    font-size: 13px;
+    font-family: "Karla";
+    font-size: 24px;
     color: #8b8a8a;
-    margin-top: 0vh;
+    margin: 10px 0 10px 0;
 }
 
 @media all and (max-width: 1000px) {
     .imagebox h1{
+        font-size: 2vw;
+        margin-top: 10vh;
+    }
+}
+
+.imagebox h2{
+    font-family: "space mono";
+    font-size: 13px;
+    color: #8b8a8a;
+    font-weight: 300;
+    margin: 5px 0 5px 5px;
+}
+
+@media all and (max-width: 1000px) {
+    .imagebox h2{
         font-size: 2vw;
         margin-top: 10vh;
     }
