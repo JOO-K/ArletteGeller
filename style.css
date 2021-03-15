@@ -3,7 +3,6 @@
 *{
     margin: 0px;
     box-sizing: border-box;
-    overflow-x: visible;
 }
 
 a {
@@ -148,7 +147,6 @@ main{
     position: relative;
     width: 60%;
     margin: 10vh auto 10vh auto;
-    overflow: hidden;
 }
 
 @media all and (max-width: 1000px) {
@@ -425,8 +423,9 @@ video {
 
 .profile-img-container {
     width: 40%;
-    margin: 52px 0 0 0;
+    margin: 50px 0 0 0;
     position: absolute;
+    animation: .7s ease-out 0s 1 profileanim;
 }
 
 .profile-img-container img {
@@ -436,14 +435,22 @@ video {
 .profile-textbox {
     position: absolute;
     left: 48%;
-    margin: 52px 0 0 0;
-    width: 48%;
+    margin: 50px 0 0 50px;
+    width: 35%;
     color: #000000;
+    animation: .7s ease-out 0s 1 profileanim;
 }
 
-.profile-textbox h2 {
+.profile-textbox h1 {
     font-family: Karla;
     font-size: 25px;
+    font-weight: lighter;
+}
+
+
+.profile-textbox h2 {
+    font-family: Space Mono;
+    font-size: 15px;
     font-weight: lighter;
 }
 
@@ -465,6 +472,19 @@ video {
         left: 10%;
         width: 84%;
         top: calc(100vw + 30px);
+        margin: 50px 0 0 0px;
     }
 }
+
+@keyframes profileanim {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);  
+  }
+}
+
 

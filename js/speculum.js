@@ -21,7 +21,7 @@ function init() {
   const far = 1000;
 
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(25, 5, 5);
+  camera.position.set(30, 5, 0);
   camera.lookAt(0, 0, 0);    
     
     
@@ -43,9 +43,10 @@ function init() {
   scene.add(light);  
     
   const light2 = new THREE.DirectionalLight(0xffffff, 5);
-  light2.position.set(0, 50, -100);
+  light2.position.set(0, 50, 100);
   scene.add(light2);    
     
+      
   //Renderer
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.setSize(container.clientWidth * 1.0, container.clientHeight * 1.0);
@@ -56,7 +57,7 @@ function init() {
   //Load Models
   let loader = new THREE.GLTFLoader();
     
-  loader.load("obj/speculumfin.gltf", function(gltf) {
+  loader.load("obj/speculum.gltf", function(gltf) {
     scene.add(gltf.scene);
     speculum = gltf.scene;
     animate();
@@ -69,7 +70,7 @@ function animate() {
     
     
   grid.position.set(0,-2,0);
-  speculum.position.set(0,-2,0);    
+  speculum.position.set(0,0,0);    
     
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
