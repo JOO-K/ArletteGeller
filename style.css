@@ -35,6 +35,7 @@ a {
     display: block;
 }
 
+
 main{
     animation: .7s ease-out 0s 1 fade;
     opacity: 1;
@@ -53,17 +54,23 @@ main{
 /* Dropdown Button */
 .dropbtn {
     position: fixed;
-    right: 0;
-    top: 0;
-    background-color: deeppink;
+    right: 8px;
+    top: 8px;
     color: white;
-    padding: 18px;
+    padding: 20px;
     border: none;
-    border-radius: 0px;
+    border-radius: 50px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 20;
     display: none;
+    animation: mymove 15s infinite;
   }
+
+  @keyframes mymove {
+  from {background-color: deeppink;}
+  to {background-color: cyan;}
+  to {background-color: lawngreen;}
+ }
   
   @media all and (max-width: 1000px) {
       .dropbtn{
@@ -487,4 +494,26 @@ video {
   }
 }
 
+/* Resume Page ------------------------------------------------------------------------------- */
+
+.resume-img-container {
+    width: 100%;
+    margin: 50px 0 50px 0;
+    position: float;
+    animation: .7s ease-out 0s 1 profileanim;
+}
+.resume-img-container img {
+    width: 100%;
+}
+
+@media all and (max-width: 1000px) {
+    .resume-img-container {
+        width: 90%;
+        margin: 50px 5vw 50px 5vw;
+    }
+
+    .resume-img-container img {
+        
+    }
+}
 
