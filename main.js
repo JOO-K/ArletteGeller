@@ -29,7 +29,7 @@ $("document").ready(function(){
     $('*[data-slide-id =  5 ]').css({"left": "100%"});
 
     var winAspect = $(window).width() / $(window).height();
-    var imgAspect = 1.78703703704;
+    var imgAspect = 1.77777777778;
 
     if(winAspect > imgAspect){
         $(".slide-container > img").addClass("wide");
