@@ -20,6 +20,9 @@ $("document").ready(function(){
     let curr = i;
     let next = i + 1;
     let aftr = i + 2;
+
+    let slideNum = 5;
+
     $('*[data-slide-id = ' + curr + ' ]').css({"left": "0%"});
     $('*[data-slide-id =  ' + next + ' ]').css({"left": "50%"});
     $('*[data-slide-id =  ' + aftr + ' ]').css({"left": "100%"});
@@ -55,7 +58,7 @@ $("document").ready(function(){
 
         console.log(curr);
         
-        if (i < 3) {
+        if (i < slideNum) {
             $('.rotary').css("left", "0");
             $('.rotary img').css("left", "100%");
             $('*[data-slide-id = ' + curr + ' ]').css({"left": "0%", "z-index": "0"});
@@ -74,7 +77,7 @@ $("document").ready(function(){
                 $('*[data-slide-id =  ' + aftr + ' ]').css({"left": "50%"});
             });
         } else {
-            let currd = 3;
+            let currd = slideNum;
             let nextd = 0;
             let aftrd = 1;
             $('.rotary').css("left", "0");
