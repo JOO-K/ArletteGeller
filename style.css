@@ -9,9 +9,23 @@ a {
     text-decoration: none;
 }
 .desktopnav{
+    display: block;    
+}
+
+.section-list{
     position: fixed;
-    top: 70px;
-    left: 0px;
+    text-align: right;
+    top: 30px;
+    right: 30px;
+    z-index: 10;
+    display: block;
+    width: 300px;
+}
+
+.project-list{
+    position: fixed;
+    top: 30px;
+    left: -10px;
     z-index: 10;
     display: block;
     width: 300px;
@@ -35,6 +49,15 @@ a {
     display: block;
 }
 
+.signature{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-family: Karla;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+}
 
 main{
     animation: .7s ease-out 0s 1 fade;
@@ -124,6 +147,17 @@ main{
       color: #242424;
       padding: 2px 5px;
   }
+
+#home{
+    font-family: Karla;
+    font-size: 30px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #242424;
+    padding: 2px 10px;
+    margin-right: -6px;
+    border-radius: 50px;
+}
   
   .active {
     background-color: deeppink;
@@ -216,7 +250,7 @@ main{
 }
 
 .slide-container .wide {
-    height: auto;
+    height: 100vh;
     width: 50%;
 }
 

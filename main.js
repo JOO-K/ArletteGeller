@@ -26,7 +26,7 @@ $("document").ready(function(){
     $('*[data-slide-id = ' + curr + ' ]').css({"left": "0%"});
     $('*[data-slide-id =  ' + next + ' ]').css({"left": "50%"});
     $('*[data-slide-id =  ' + aftr + ' ]').css({"left": "100%"});
-    $('*[data-slide-id =  3 ]').css({"left": "100%"});
+    $('*[data-slide-id =  5 ]').css({"left": "100%"});
 
     var winAspect = $(window).width() / $(window).height();
     var imgAspect = 1.78703703704;
