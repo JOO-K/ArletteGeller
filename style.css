@@ -9,8 +9,22 @@ a {
     text-decoration: none;
 }
 .desktopnav{
+    display: block;
+}
+
+.section-list{
     position: fixed;
-    top: 70px;
+    text-align: right;
+    top: 50px;
+    right: 50px;
+    z-index: 10;
+    display: block;
+    width: 300px;
+}
+
+.project-list{
+    position: fixed;
+    top: 50px;
     left: 0px;
     z-index: 10;
     display: block;
@@ -124,6 +138,15 @@ main{
       color: #242424;
       padding: 2px 5px;
   }
+
+.section-list{
+      font-family: Karla;
+      font-size: 18px;
+      line-height: 30px;
+      text-decoration: none;
+      color: #242424;
+      padding: 2px 5px;
+}
   
   .active {
     background-color: deeppink;
@@ -216,7 +239,7 @@ main{
 }
 
 .slide-container .wide {
-    height: auto;
+    height: 100vh;
     width: 50%;
 }
 
