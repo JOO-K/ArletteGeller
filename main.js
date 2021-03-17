@@ -21,7 +21,7 @@ $("document").ready(function(){
     let next = i + 1;
     let aftr = i + 2;
 
-    let slideNum = 6;
+    let slideNum = 5;
 
     $('*[data-slide-id = ' + curr + ' ]').css({"left": "0%"});
     $('*[data-slide-id =  ' + next + ' ]').css({"left": "50%"});
