@@ -58,7 +58,7 @@ $("document").ready(function(){
 
         console.log(curr);
         
-        if (i < slideNum) {
+        if (i < slideNum - 1) {
             $('.rotary').css("left", "0");
             $('.rotary img').css("left", "100%");
             $('*[data-slide-id = ' + curr + ' ]').css({"left": "0%", "z-index": "0"});
@@ -76,23 +76,48 @@ $("document").ready(function(){
                 $('*[data-slide-id =  ' + next + ' ]').css({"left": "0%"});
                 $('*[data-slide-id =  ' + aftr + ' ]').css({"left": "50%"});
             });
-        } else {
-            let currd = slideNum;
-            let nextd = 0;
-            let aftrd = 1;
+        } else if (i == slideNum - 1) {
+            let currd = i;
+            let nextd = i+1;
+            let aftrd = 0;
             $('.rotary').css("left", "0");
+            $('.rotary img').css("left", "100%");
             $('*[data-slide-id = ' + currd + ' ]').css({"left": "0%", "z-index": "0"});
             $('*[data-slide-id =  ' + nextd + ' ]').css({"left": "50%", "z-index": "1"});
             $('*[data-slide-id =  ' + aftrd + ' ]').css({"left": "100%", "z-index": "2"});
-            i = 0;
             
             $('.rotary').animate({
                 "left": "-100%"
             }, 700, function() {
+                $('*[data-slide-id =  ' + currd + ' ]').attr("data-slide-status", "rest");
+                $('*[data-slide-id =  ' + aftrd + ' ]').attr("data-slide-status", "active");
                 $('*[data-slide-id = ' + currd + ' ]').css({"left": "100%"});
                 $('*[data-slide-id =  ' + nextd + ' ]').css({"left": "0%"});
                 $('*[data-slide-id =  ' + aftrd + ' ]').css({"left": "50%"});
                 $('.rotary').css("left", "0");
+                i += 1;
+                console.log("---------");
+            });
+        } else {
+            let currd = i;
+            let nextd = 0;
+            let aftrd = 1;
+            $('.rotary').css("left", "0");
+            $('.rotary img').css("left", "100%");
+            $('*[data-slide-id = ' + currd + ' ]').css({"left": "0%", "z-index": "0"});
+            $('*[data-slide-id =  ' + nextd + ' ]').css({"left": "50%", "z-index": "1"});
+            $('*[data-slide-id =  ' + aftrd + ' ]').css({"left": "100%", "z-index": "2"});
+            
+            $('.rotary').animate({
+                "left": "-100%"
+            }, 700, function() {
+                $('*[data-slide-id =  ' + currd + ' ]').attr("data-slide-status", "rest");
+                $('*[data-slide-id =  ' + aftrd + ' ]').attr("data-slide-status", "active");
+                $('*[data-slide-id = ' + currd + ' ]').css({"left": "100%"});
+                $('*[data-slide-id =  ' + nextd + ' ]').css({"left": "0%"});
+                $('*[data-slide-id =  ' + aftrd + ' ]').css({"left": "50%"});
+                $('.rotary').css("left", "0");
+                i = 0;
                 console.log("---------");
             });
         }
