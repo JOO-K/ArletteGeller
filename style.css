@@ -250,8 +250,8 @@ main{
 }
 
 .slide-container .wide {
-    height: 100vh;
-    width: 50%;
+    height: auto;
+    width: 100vw;
 }
 
 .slide-container img {
