@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -470,7 +475,7 @@ video {
 }
 
 .profile-img-container img {
-    width: 100%;
+    width: 90%;
 }
 
 .profile-textbox {
