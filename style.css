@@ -568,3 +568,7 @@ video {
 .copyright {
     text-align: right;
 }
+
+.about .copyright {
+    display: none;
+}
