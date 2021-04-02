@@ -546,22 +546,22 @@ video {
     width: 60vw;
     height: 69vw;
     margin: 50px 0 50px 0;
-    position: float;
+    position: relative;
+    right: -60px;
     animation: .7s ease-out 0s 1 profileanim;
 }
-.resume-img-container img {
-    width: 100%;
+
+.resume-img-container embed {
+    right: -600px;
 }
 
 @media all and (max-width: 1000px) {
     .resume-img-container {
         width: 90vw;
         height: 105vw;
+        right: 0;
         margin: 50px 5vw 50px 5vw;
     }
 
-    .resume-img-container img {
-        
-    }
 }
 
