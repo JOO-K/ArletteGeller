@@ -1,4 +1,3 @@
-
 //Variables for setup
 
 let container;
@@ -94,7 +93,7 @@ window.addEventListener("resize", onWindowResize);
 
 //Orbit Controls
   controls = new THREE.OrbitControls( camera, renderer.domElement);
-=======
+
 //Variables for setup
 
 let container;
