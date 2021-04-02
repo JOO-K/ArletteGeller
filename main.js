@@ -151,6 +151,10 @@ $("document").ready(function(){
         }
     });
     
+
+    // Add copyright
+    $(".gallery").append("<div class='imagebox copyright'></>");
+    $(".copyright").append("<h2 class='hehe'>Web Design by ai.goo © 2021</h2>");
 })
 
 
