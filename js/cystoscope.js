@@ -38,13 +38,13 @@ function init() {
   
   //Light setup
 
-  const light = new THREE.DirectionalLight(0xffffff, 2);
-  light.position.set(20, 10, 10);
-  scene.add(light);  
+  const light3= new THREE.AmbientLight(0xffffff, 2);
+  light3.position.set(0,0,0);
+  scene.add(light3);    
     
-  const light2 = new THREE.DirectionalLight(0xffffff, 1);
-  light2.position.set(-20, -50, -10);
-  scene.add(light2);    
+  const light = new THREE.DirectionalLight(0xffffff, .5);
+  light.position.set(0, 100, 100);
+  scene.add(light);     
     
   //Renderer
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
