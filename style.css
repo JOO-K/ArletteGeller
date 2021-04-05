@@ -196,6 +196,10 @@ main{
     margin: 10vh auto 10vh auto;
 }
 
+.int-3d {
+    padding: 0 0 0 5px;
+}
+
 @media all and (max-width: 1000px) {
     .imagebox{
         width: 100%;
@@ -203,6 +207,10 @@ main{
 
     .imagebox h1{
         margin: 0 0 0 22px;
+    }
+
+    .imagebox h2{
+        transform: translate(22px, 0);
     }
 }
 
