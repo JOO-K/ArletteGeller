@@ -27,6 +27,11 @@ a {
     width: 300px;
 }
 
+.section-list img {
+    height: 25px;
+    width: 25px;
+}
+
 .project-list{
     position: fixed;
     top: 30px;
@@ -399,7 +404,7 @@ main{
 @media all and (max-width: 1000px) {
     .imagebox h1{
         font-size: 20px;
-        margin: 10px 0 10px 22px;
+        margin: 10px 0 0 22px;
     }
 }
 
@@ -414,7 +419,6 @@ main{
 @media all and (max-width: 1000px) {
     .imagebox h2{
         font-size: 2vw;
-        margin-top: 10vh;
     }
 }
 
