@@ -325,7 +325,7 @@ main{
 .monobox{
     /* border: 4px dashed pink; */
     position: absolute;
-    top: 80px;
+    top: 140px;
     animation: 0.7s ease-out 0s 1 loadintext;
 }
 
@@ -371,7 +371,8 @@ main{
 }
 
 .project-slides {
-    top: 20vw;
+    position: relative;
+    top: 100px;
 }
 
 #canvas {
@@ -419,6 +420,7 @@ main{
 
 .project-gallery .textbox {
     width: 50%;
+    height: auto;
     margin: 0;
 }
 
@@ -427,10 +429,7 @@ main{
     font-weight: 300;
     font-size: 30px;
     color: white;
-}
-
-.project-gallery .textbox .title {
-    margin: 0 auto 0 auto;
+    display: inline-block;
 }
 
 @media all and (max-width: 1000px) {
@@ -514,7 +513,6 @@ video {
     font-size: 15px;
     font-weight: lighter;
 }
-
 @media all and (max-width: 1000px) {
     .profile-img-container {
         width: 100%;
