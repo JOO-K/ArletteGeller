@@ -3,6 +3,7 @@
 *{
     margin: 0px;
     box-sizing: border-box;
+    list-style: none;
 }
 
 html, body {
@@ -161,6 +162,16 @@ main{
 #home{
     font-family: Karla;
     font-size: 30px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #242424;
+    margin-right: -6px;
+    border-radius: 50px;
+}
+
+#person {
+    font-family: Karla;
+    font-size: 20px;
     line-height: 40px;
     text-decoration: none;
     color: #242424;
