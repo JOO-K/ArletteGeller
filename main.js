@@ -175,7 +175,7 @@ $("document").ready(function(){
         <li  id='mitral-valve'>
             <a href='mitral-valve-sewing-ring.html'>Mitral Valve Sewing Ring</a>
         </li>
-        <!-- <li>
+        <!-- <li id="drain-syst">
            <a href='drainage-system.html'>Drainage System</a>
        </li> -->
         <li id='heart-failure' >
@@ -204,23 +204,23 @@ $("document").ready(function(){
     <div class='dropdown'>
         <button onclick='myFunction()' class='dropbtn'></button>
         <div id='myDropdown' class='dropdown-content'>
-            <a href='index.html' id='home'>Arlette Geller</a>
-            <a href='about.html' id='person'>About Me</a>
-            <a href='resume.html' id='person' style='border-bottom: 1px grey solid; border-radius: 0;'>Resume</a>
-    
-            <a href='speculum-apparatus.html'>Speculum Redesign</a>
-            <a href='cystoscope-apenditure.html'>Cystoscope</a>
-            <a href='mitral-valve-sewing-ring.html' class='active'>Mitral Valve Sewing Ring</a>
-            <!-- <a href='drainage-system.html'>Drainage System</a> -->
-            <a href='heart-failure-prediction-model.html'>Heart Failure Prediction Model</a>
-            <a href='at-home-breast-cancer-screening.html'>At-Home B.C. Screening</a>
-            <a href='assistive-technology-high-spinal-injuries.html'>Assist-Tech High Spinal Injuries</a>
-            <a href='pen-plotter-machine.html'>Pen Plotter Machine</a>
-            <a href='non-invasive-vagus-nerve-stimulation-device.html'>Non-Invasive V.N.S.</a>
-            <a href='game-board-design.html' style='border-bottom: 1px grey solid; border-radius: 0;'>Game Board Design</a>
-    
-            <a href='https://www.linkedin.com/in/arlettegeller'><img src='images/linkedin.png' style='margin-top:10px; width: 25px;'></a>
-            <a href='mailto:ArletteGeller@gmail.com'><img src='images/Email.png' style='width: 25px;'></a>
+            <li id="home"><a href='index.html' id='home' style='border-radius: 0; padding-left: 10px;'>Arlette Geller</a></li>    
+            <li id="about-me"><a href='about.html' id='person' style='border-radius: 0;'>About Me</a></li>    
+            <li id="resume"><a href='resume.html' id='person' style='border-bottom: 1px grey solid; border-radius: 0;'>Resume</a></li>    
+            
+            <li id="spec-appart"><a href='speculum-apparatus.html'>Speculum Redesign</a></li>
+            <li id="cyst-append"><a href='cystoscope-apenditure.html'>Cystoscope</a></li>
+            <li id="mitral-valve"><a href='mitral-valve-sewing-ring.html'>Mitral Valve Sewing Ring</a></li>
+            <!--<li id="drain-syst"><a href='drainage-system.html'>Drainage System</a></li>  -->
+            <li id="heart-failure"><a href='heart-failure-prediction-model.html'>Heart Failure Prediction Model</a></li>
+            <li id="bc-screening-m"><a href='at-home-breast-cancer-screening.html'>At-Home B.C. Screening</a></li>
+            <li id="assist-tech-m"><a href='assistive-technology-high-spinal-injuries.html'>Assist-Tech High Spinal Injuries</a></li>
+            <li id="pen-plotter"><a href='pen-plotter-machine.html'>Pen Plotter Machine</a></li>
+            <li id="non-invasive-m"><a href='non-invasive-vagus-nerve-stimulation-device.html'>Non-Invasive V.N.S.</a></li>
+            <li id="game-board"><a href='game-board-design.html' style='border-bottom: 1px grey solid; border-radius: 0;'>Game Board Design</a></li>
+
+            <li id="linked-in"><a href='https://www.linkedin.com/in/arlettegeller'><img src='images/linkedin.png' style='margin-top:10px; width: 25px;'></a></li>
+            <li id="email"><a href='mailto:ArletteGeller@gmail.com'><img src='images/Email.png' style='width: 25px;'></a></li> 
         </div>
     </div>
     
@@ -261,12 +261,15 @@ jQuery(function() {
         $("#heart-failure > a").addClass("active");
     } else if(path=="at-home-breast-cancer-screening.html"){
         $("#bc-screening > a").addClass("active");
+        $("#bc-screening-m > a").addClass("active");
     } else if(path=="assistive-technology-high-spinal-injuries.html"){
         $("#assist-tech > a").addClass("active");
+        $("#assist-tech-m > a").addClass("active");
     } else if(path=="pen-plotter-machine.html"){
         $("#pen-plotter > a").addClass("active");
     } else if(path=="non-invasive-vagus-nerve-stimulation-device.html"){
         $("#non-invasive > a").addClass("active");
+        $("#non-invasive-m > a").addClass("active");
     } else if(path=="game-board-design.html"){
         $("#game-board > a").addClass("active");
     } else if(path=="about.html"){
