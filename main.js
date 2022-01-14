@@ -174,10 +174,10 @@ $("document").ready(function(){
        </li>
         <li  id='mitral-valve'>
             <a href='mitral-valve-sewing-ring.html'>Mitral Valve Sewing Ring</a>
-        </li>
-        <!-- <li id="drain-syst">
+       </li>
+        <li id="drain-syst">
            <a href='drainage-system.html'>Drainage System</a>
-       </li> -->
+       </li>
         <li id='heart-failure' >
             <a href='heart-failure-prediction-model.html'>Heart Failure Prediction Model</a>
         </li>
@@ -211,7 +211,7 @@ $("document").ready(function(){
             <li id="spec-appart"><a href='speculum-apparatus.html'>Speculum Redesign</a></li>
             <li id="cyst-append"><a href='cystoscope-apenditure.html'>Cystoscope</a></li>
             <li id="mitral-valve"><a href='mitral-valve-sewing-ring.html'>Mitral Valve Sewing Ring</a></li>
-            <!--<li id="drain-syst"><a href='drainage-system.html'>Drainage System</a></li>  -->
+            <li id="drain-syst"><a href='drainage-system.html'>Drainage System</a></li>
             <li id="heart-failure"><a href='heart-failure-prediction-model.html'>Heart Failure Prediction Model</a></li>
             <li id="bc-screening-m"><a href='at-home-breast-cancer-screening.html'>At-Home B.C. Screening</a></li>
             <li id="assist-tech-m"><a href='assistive-technology-high-spinal-injuries.html'>Assist-Tech High Spinal Injuries</a></li>
