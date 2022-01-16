@@ -59,7 +59,7 @@ function init() {
     
   loader.load("obj/Deployer.gltf", function(gltf) {
     scene.add(gltf.scene);
-    speculum = gltf.scene;
+    Deployer = gltf.scene;
     animate();
   });
     
@@ -70,7 +70,7 @@ function animate() {
     
     
   grid.position.set(0,-2,0);
-  speculum.position.set(0,0,0);    
+  Deployer.position.set(0,0,0);    
     
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
