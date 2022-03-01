@@ -155,7 +155,7 @@ $("document").ready(function(){
             <a href='about.html'>About Me</a>
         </li>
         <li id="resume">
-            <a href='resume.html'>Resume</a>
+            <a href='resume.html'>Resume&Documents</a>
         </li>
         <li id="email">
            <a href='https://www.linkedin.com/in/arlettegeller'><img src='images/linkedin.png' style='margin-top:10px;'></a><br>
