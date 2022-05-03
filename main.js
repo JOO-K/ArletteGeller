@@ -161,7 +161,7 @@ $("document").ready(function(){
            <a href='https://www.linkedin.com/in/arlettegeller'><img src='images/linkedin.png' style='margin-top:10px;'></a><br>
        </li>
        <li>
-           <a href='mailto:ArletteGeller@gmail.com'><img src='images/Email.png'></a>
+           <a href='mailto:ag563@duke.edu'><img src='images/Email.png'></a>
        </li>
     </ul>
     <br>
@@ -220,7 +220,7 @@ $("document").ready(function(){
             <li id="game-board"><a href='game-board-design.html' style='border-bottom: 1px grey solid; border-radius: 0;'>Game Board Design</a></li>
 
             <li id="linked-in"><a href='https://www.linkedin.com/in/arlettegeller'><img src='images/linkedin.png' style='margin-top:10px; width: 25px;'></a></li>
-            <li id="email"><a href='mailto:ArletteGeller@gmail.com'><img src='images/Email.png' style='margin-top:10px; width: 25px;'></a></li> 
+            <li id="email"><a href='mailto:ag563@duke.edu'><img src='images/Email.png' style='margin-top:10px; width: 25px;'></a></li> 
         </div>
     </div>
     
