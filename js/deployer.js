@@ -57,9 +57,9 @@ function init() {
   //Load Models
   let loader = new THREE.GLTFLoader();
     
-  loader.load("obj/Deployer.gltf", function(gltf) {
+  loader.load("obj/deployer.gltf", function(gltf) {
     scene.add(gltf.scene);
-    Deployer = gltf.scene;
+    deployer = gltf.scene;
     animate();
   });
     
@@ -70,7 +70,7 @@ function animate() {
     
     
   grid.position.set(0,-2,0);
-  Deployer.position.set(0,0,0);    
+  deployer.position.set(0,0,0);    
     
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
