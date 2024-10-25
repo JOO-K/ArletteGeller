@@ -152,7 +152,7 @@ $("document").ready(function(){
             <a href='index.html' id='home'>Arlette Geller</a>
         </li>
         <li id="about-me">
-            <a href='about.html'>About Me and My Recent Work</a>
+            <a href='about.html'>About</a>
         </li>
         <li id="resume">
             <a href='resume.html'>Resume</a>
