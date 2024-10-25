@@ -205,7 +205,7 @@ $("document").ready(function(){
         <button onclick='myFunction()' class='dropbtn'></button>
         <div id='myDropdown' class='dropdown-content'>
             <li id="home"><a href='index.html' id='home' style='border-radius: 0; padding-left: 10px;'>Arlette Geller</a></li>    
-            <li id="about-me"><a href='about.html' id='person' style='border-radius: 0;'>About Me and My Recent Work</a></li>    
+            <li id="about-me"><a href='about.html' id='person' style='border-radius: 0;'>About</a></li>    
             <li id="resume"><a href='resume.html' id='person' style='border-bottom: 1px grey solid; border-radius: 0;'>Resume</a></li>    
             
             <li id="spec-appart"><a href='speculum-apparatus.html'>Speculum Redesign</a></li>
